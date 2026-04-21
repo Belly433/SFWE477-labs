@@ -1,4 +1,4 @@
-1.  docker run starts a container directly on the local machine using Docker. It is a standalone process managed only by Docker.
+1. docker run starts a container directly on the local machine using Docker. It is a standalone process managed only by Docker.
 In other hand, kubectl run creates a pod inside a Kubernetes cluster. The container is no longer managed directly by the user, but by Kubernetes.
 
 Both using the same image, the main difference is that Kubernetes introduces an orchestration layer: the pod is managed by the cluster instead of running locally.
@@ -14,7 +14,7 @@ This corresponds to the kube-scheduler component in the Kubernetes control plane
 
 4. With the Alpine image, any changes made inside the pod (for example creating files) were lost after exiting or restarting the pod.
 
-This is because pods are ephemeral — they do not persist changes unless storage is explicitly configured.
+This is because pods are ephemeral, they do not persist changes unless storage is explicitly configured.
 
 In Docker Lab 1, changes inside a container could persist if the container was not removed. In Kubernetes, the pod lifecycle is managed differently, and containers are expected to be disposable.
 
