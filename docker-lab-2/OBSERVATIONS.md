@@ -20,4 +20,4 @@ In Docker Lab 1, changes inside a container could persist if the container was n
 
 5. After deleting the pod, Kubernetes did not restart it because it was created manually using kubectl run, without any controller managing it.
 
-Kubernetes only ensures self-healing when a higher-level object like a Deployment or ReplicaSet is used. These controllers continuously monitor the desired state and recreate pods if they are deleted. Since the pod was standalone, once deleted, it was permanently removed.
+Kubernetes only ensures self-healing when a higher-level object like a Deployment is used. These controllers continuously monitor the desired state and recreate pods if they are deleted. Since the pod was standalone, once deleted, it was permanently removed.
